@@ -1,26 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DashboardLoginComponent } from './dashboard-login/dashboard-login.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
-  /* {
-    path: 'forget-password',
-    loadChildren: () => import('./forget-password/forget-password.module').then(m => m.ForgetPasswordModule)
-  },
-  {
-    path: 'orders',
-    loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule)
-  },
-  */
-  /* {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
-  },
-  {
-    path: '**',
-    redirectTo: ''
-  }  */
-  
+  { path:'index', component:LoginComponent},
+  { path: 'dashboard', component:DashboardLoginComponent },
+  { path: '', redirectTo: '/index', pathMatch: 'full' }
 ];
 
 @NgModule({

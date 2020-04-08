@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgModule } from "@angular/core";
 import {MatButtonModule} from '@angular/material/button';
 import {MDCRipple} from '@material/ripple';
-
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -11,10 +11,10 @@ import {MDCRipple} from '@material/ripple';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+ 
 
 }
