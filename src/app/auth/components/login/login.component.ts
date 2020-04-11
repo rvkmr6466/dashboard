@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModule } from "@angular/core";
-import {MatButtonModule} from '@angular/material/button';
-import {MDCRipple} from '@material/ripple';
-import { Router } from "@angular/router";
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,10 +8,14 @@ import { Router } from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
- 
+
+  ngSubmit(f:NgForm){
+    console.log(f.value);
+    console.log(f.valid);
+  }
 
 }
