@@ -6,26 +6,28 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-
+import { ConfirmEmailComponent } from './components/confirm-email/confirm-email.component';
 
 @NgModule({
-  declarations: [
-    RegistrationComponent, 
-    ResetPasswordComponent, 
-    LoginComponent, 
-    HomeComponent
-  ],
-  imports: [
-    CommonModule,
-    AuthRoutingModule,
-    FormsModule
-  ],
-  exports: [
-    RegistrationComponent, 
-    ResetPasswordComponent,
-    LoginComponent,
-    HomeComponent
-  ],
+	declarations: [
+		RegistrationComponent, 
+		ResetPasswordComponent, 
+		LoginComponent, 
+		HomeComponent, 
+		ConfirmEmailComponent
+	],
+	imports: [
+		CommonModule,
+		AuthRoutingModule,
+		FormsModule
+	],
+	exports: [
+		RegistrationComponent, 
+		ResetPasswordComponent,
+		LoginComponent,
+		HomeComponent,
+		ConfirmEmailComponent
+	],
     
 })
 export class AuthModule { }

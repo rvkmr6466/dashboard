@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { ColumnOneComponent } from './layout/column-one/column-one.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule, Router } from '@angular/router';
-
-
+import { ColumnTwoComponent } from './layout/column-two/column-two.component';
+import { ContainerComponent } from './components/container/container.component';
 
 @NgModule({
   declarations: [
     ColumnOneComponent, 
-    HeaderComponent
+    HeaderComponent, 
+    ColumnTwoComponent, 
+    ContainerComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,10 @@ import { RouterModule, Router } from '@angular/router';
   ],
   exports:[
     ColumnOneComponent,
-    HeaderComponent
+    ColumnTwoComponent,
+    HeaderComponent,
+    ContainerComponent,
+    
   ]
 })
 export class SharedModule { }

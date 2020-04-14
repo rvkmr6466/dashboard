@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-registration',
-  templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.scss']
+	selector: 'app-registration',
+	templateUrl: './registration.component.html',
+	styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
-  ngSubmit(f:NgForm){
-    console.log(f.value);
-    console.log(f.valid);
-  }
+    ngSubmit(f:NgForm){
+		console.log(f.value);
+		console.log(f.valid);
+    }
 
 }
